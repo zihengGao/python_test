@@ -22,11 +22,11 @@ class Interface:
     def test_06(self):
         driver.find_element(By.XPATH,'//input[text()="登录"]').click() #通过XPATH属性定位,实现点击登录
 
-# #创建夹具
-# @pytest.fixture()
-# def driver():
-#     driver = webdriver.Chrome()#启动浏览器
-#     driver.maximize_window()#浏览器最大化
+#创建夹具
+@pytest.fixture()
+def driver():
+    driver = webdriver.Chrome()#启动浏览器
+    driver.maximize_window()#浏览器最大化
 
 
 
